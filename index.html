@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artists in Aurora</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="mytitle">
+      <h1 class="main">Drawing is discovering myself</h1>
+      <h2 class="sub">Ryan & Lauren's gallery</h2>
+    </div>
+
+    <div class="full-img" id="fullImgBox">
+      <img src="images/img1.jpeg" id="fullImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+      <img src="images/img1.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img2.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img3.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img4.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img5.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img6.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img7.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img8.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img9.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img10.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img11.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img12.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/img13.jpeg" onclick="openFullImg(this.src)" />
+    </div>
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
